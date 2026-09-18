@@ -9,7 +9,6 @@ find_package(ament_cmake REQUIRED)
 
 
 install(DIRECTORY
-  config
   launch
   meshes
   urdf
@@ -23,7 +22,6 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 install(PROGRAMS
-  src/telemetry_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()
